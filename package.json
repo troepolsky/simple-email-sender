@@ -1,5 +1,8 @@
 {
   "private": true,
+  "name": "simple-email-sender",
+  "version": "0.1.0",
+  "homepage": "https://troepolsky.github.io/simple-email-sender",
   "entry": {
     "index": "./index.js"
   },
@@ -11,6 +14,7 @@
     "react-dom": "^16.2.0"
   },
   "devDependencies": {
+    "gh-pages": "^1.0.0",
     "atool-build": "^1.0.7",
     "atool-test-mocha": "^0.2.1",
     "babel-eslint": "^7.0.0",
@@ -35,6 +39,7 @@
     "build": "atool-build",
     "lint": "eslint --ext .js,.jsx src/",
     "start": "dora --plugins webpack",
-    "test": "atool-test-mocha ./**/__tests__/*-test.js"
+    "test": "atool-test-mocha ./**/__tests__/*-test.js",
+    "deploy": "gh-pages -d build"
   }
 }
